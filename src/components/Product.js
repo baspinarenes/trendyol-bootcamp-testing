@@ -7,13 +7,13 @@ export default function Product({ productData }) {
 
   const handleClickFavorite = (e) => {
     e.preventDefault();
-    setIsFavorited(!isFavorited.value);
+    setIsFavorited(!isFavorited);
   };
 
   return (
     <a
       href={`/product?id=${productData.id}`}
-      data-cy="product"
+      data-testid="product-card"
       className="hover:shadow-lg"
     >
       <div className="text-sm">

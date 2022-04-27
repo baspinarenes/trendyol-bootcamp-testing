@@ -13,7 +13,7 @@ export default function ProductPage() {
   }
 
   return (
-    <main className="py-10 px-5" data-cy="product-page">
+    <main className="py-10 px-5" data-testid="product-page">
       <div className="max-w-6xl mx-auto flex gap-10">
         <div className="w-96 h-80 shrink-0 flex justify-center">
           <img src={product.image} alt="product img" className="w-72 h-80" />

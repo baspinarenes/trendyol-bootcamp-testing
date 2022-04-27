@@ -3,11 +3,13 @@ import { useState, useEffect } from "react";
 
 const useFetchProducts = () => {
   const [products, setProducts] = useState(null);
+
   useEffect(() => {
     (async () => {
       const response = await axios.get(
         "https://fakestoreapi.com/products?limit=20"
       );
+
       setProducts(response.data);
     })();
   }, []);

@@ -16,7 +16,6 @@ describe("<FavoriteBox /> tests", () => {
   });
 
   test("should fill heart when isFavorited is true", () => {
-    console.log("sadas");
     const props = {
       isFavorited: true,
       handleClickFavorite: () => {},
